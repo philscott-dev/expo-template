@@ -7,6 +7,6 @@ interface ModalState {
 }
 
 export const useModalStore = create<ModalState>((set) => ({
-  count: 0,
+  activeModalName: undefined,
   setActiveModalName: (name) => set(() => ({ activeModalName: name })),
 }))
