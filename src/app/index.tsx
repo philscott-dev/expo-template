@@ -4,6 +4,6 @@ import { Redirect } from 'expo-router'
 const Index = () => {
   const { data } = useMetaQuery()
   const is_first_use = data?.find((d) => d.key === 'is_first_use')
-  return <Redirect href={is_first_use?.value === true ? '/onboarding' : '/tally'} />
+  return <Redirect href={is_first_use?.value === true ? '/onboarding' : '/(main)/screeny'} />
 }
 export default Index

@@ -1,7 +1,6 @@
 import ModalSheet from '@/src/components/Modal/ModalSheet'
 import { View, Text, StyleSheet } from 'react-native'
 import { Link } from 'expo-router'
-import Animated from 'react-native-reanimated'
 
 export default function ScreenY() {
   return (

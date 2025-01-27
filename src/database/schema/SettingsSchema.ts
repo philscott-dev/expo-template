@@ -1,6 +1,6 @@
 import { Generated } from 'kysely'
 
-interface Base {
+export interface Base {
   created_at: Generated<Date>
   updated_at: Generated<Date>
 }

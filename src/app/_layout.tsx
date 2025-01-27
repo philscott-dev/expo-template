@@ -62,10 +62,10 @@ function RootLayout() {
   return (
     <>
       <Stack>
-        <Stack.Screen name="(main)" options={{ headerShown: false }} />
+        <Stack.Screen name="(main)" options={{ headerShown: false, animation: 'none' }} />
         <Stack.Screen
           name="onboarding"
-          options={{ headerShown: false, presentation: 'fullScreenModal' }}
+          options={{ headerShown: false, presentation: 'fullScreenModal', animation: 'none' }}
         />
       </Stack>
       <PortalHost name="modal" />

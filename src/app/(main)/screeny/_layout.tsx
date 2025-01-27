@@ -19,9 +19,9 @@ export default function ScreenYLayout() {
 }
 
 const HeadRightButton = () => {
-  const { setActiveModalName } = useModalStore()
+  const { showModal } = useModalStore()
   return (
-    <TouchableOpacity onPress={() => setActiveModalName?.('modal-test')}>
+    <TouchableOpacity onPress={() => showModal('modal-test')}>
       <FontAwesome size={28} name="plus" color={'black'} />
     </TouchableOpacity>
   )

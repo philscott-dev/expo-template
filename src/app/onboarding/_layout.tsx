@@ -11,7 +11,7 @@ export default function OnboardingLayout() {
       key: 'is_first_use',
       value: false,
     })
-    router.replace('/tally')
+    router.replace('/(main)/screeny')
   }
 
   return (
