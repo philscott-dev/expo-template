@@ -3,7 +3,6 @@ import ModalBackdrop from './ModalBackdrop'
 import { Portal } from '@gorhom/portal'
 import { StyleSheet, View } from 'react-native'
 import { PropsWithChildren } from 'react'
-import { useUIContext } from '@/src/context/UIStateProvider'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import {
   BottomSheetModal,
@@ -11,6 +10,7 @@ import {
   BottomSheetModalProvider,
   BottomSheetBackdropProps,
 } from '@gorhom/bottom-sheet'
+import { useModalStore } from '@/src/stores/useModalStore'
 
 export type ModalName = 'modal-test'
 
@@ -19,7 +19,7 @@ type Props = PropsWithChildren<{
 }>
 
 export default function ModalSheet({ name, children }: Props) {
-  const { activeModalName, setActiveModalName } = useUIContext()
+  const { activeModalName, showModal, hideModal } = useModalStore()
   const { bottom: bottomInset } = useSafeAreaInsets()
 
   const bottomSheetModalRef = useRef<BottomSheetModal>(null)
@@ -47,10 +47,10 @@ export default function ModalSheet({ name, children }: Props) {
     } else {
       bottomSheetModalRef.current?.present()
     }
-  }, [activeModalName, setActiveModalName, name])
+  }, [activeModalName, showModal, name])
 
   const onDismiss = () => {
-    setActiveModalName?.(undefined)
+    hideModal()
   }
 
   return (

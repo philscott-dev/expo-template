@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Tallyman",
-    "slug": "Tallyman",
+    "name": "Template",
+    "slug": "Template",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -11,14 +11,14 @@
     "jsEngine": "hermes",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "dev.philscott.Tallyman"
+      "bundleIdentifier": "dev.philscott.Template"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "dev.philscott.Tallyman"
+      "package": "dev.philscott.Template"
     },
     "web": {
       "bundler": "metro",

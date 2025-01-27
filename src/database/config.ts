@@ -1,4 +1,4 @@
 import * as FileSystem from 'expo-file-system'
 
-export const name = 'tallyman.db'
-export const directory = FileSystem.documentDirectory + 'Tallyman'
+export const name = 'template.db'
+export const directory = FileSystem.documentDirectory + 'Template'
