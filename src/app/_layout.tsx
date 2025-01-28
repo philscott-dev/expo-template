@@ -15,6 +15,9 @@ import {
   preventAutoHideAsync as preventSplashScreenAutoHideAsync,
 } from 'expo-splash-screen'
 
+// NativeWind
+import '../../global.css'
+
 const queryClient = new QueryClient()
 
 // Prevent the splash screen from auto-hiding
